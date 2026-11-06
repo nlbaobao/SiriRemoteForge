@@ -1,0 +1,234 @@
+{
+  "appProfiles": {
+    "com.interview.aibox": "interview_aibox",
+    "default": "global"
+  },
+  "modes": {
+    "L1": {
+      "inherits": "global"
+    },
+    "L2": {
+      "inherits": "global"
+    },
+    "interview_aibox": {
+      "inherits": "global",
+      "select": {
+        "action": "keystroke",
+        "keys": "cmd+enter",
+        "icon": "return",
+        "label": "确认（Command + Enter）"
+      },
+      "ring.up": {
+        "action": "repeatKey",
+        "keys": "pageup",
+        "delay": 0.4,
+        "interval": 0.2,
+        "icon": "arrow.up",
+        "label": "向上翻页"
+      },
+      "ring.down": {
+        "action": "repeatKey",
+        "keys": "pagedown",
+        "delay": 0.4,
+        "interval": 0.2,
+        "icon": "arrow.down",
+        "label": "向下翻页"
+      },
+      "ring.left": {
+        "action": "repeatKey",
+        "keys": "left",
+        "delay": 0.4,
+        "interval": 0.08,
+        "icon": "arrow.left",
+        "label": "光标左移"
+      },
+      "ring.right": {
+        "action": "repeatKey",
+        "keys": "right",
+        "delay": 0.4,
+        "interval": 0.08,
+        "icon": "arrow.right",
+        "label": "光标右移"
+      },
+      "button.playPause": {
+        "action": "mouse",
+        "op": "click",
+        "icon": "cursorarrow",
+        "label": "鼠标左键"
+      }
+    },
+    "global": {
+      "button.menu": {
+        "action": "repeatKey",
+        "keys": "delete",
+        "delay": 0.45,
+        "interval": 0.08,
+        "icon": "delete.left",
+        "label": "删除输入"
+      },
+      "button.power": {
+        "action": "launch",
+        "app": "ChatGPT",
+        "label": "打开 ChatGPT"
+      },
+      "button.siri": {
+        "action": "pushToTalk",
+        "keys": "fn+space",
+        "icon": "mic.fill",
+        "label": "微信语音（按住说话）"
+      },
+      "button.tv": {
+        "action": "launch",
+        "app": "/System/Applications/Apps.app",
+        "icon": "square.grid.2x2",
+        "label": "应用中心"
+      },
+      "button.volumeUp": {
+        "action": "repeatKey",
+        "keys": "pageup",
+        "delay": 0.4,
+        "interval": 0.2,
+        "icon": "arrow.up",
+        "label": "向上翻页"
+      },
+      "button.volumeDown": {
+        "action": "repeatKey",
+        "keys": "pagedown",
+        "delay": 0.4,
+        "interval": 0.2,
+        "icon": "arrow.down",
+        "label": "向下翻页"
+      }
+    }
+  },
+  "settings": {
+    "accelCurve": 1,
+    "accelHighSpeed": 0.06,
+    "accelLowSpeed": 0.008,
+    "accelMax": 2.6,
+    "accelMin": 0.4,
+    "accelerationCurvesLinked": false,
+    "appWheel": [],
+    "automaticUpdateChecksEnabled": true,
+    "automaticallyDownloadUpdatesEnabled": true,
+    "circularScroll": {
+      "accelCurve": 1,
+      "accelHighSpeed": 0.07,
+      "accelLowSpeed": 0.01,
+      "accelMax": 2.5,
+      "accelMin": 1,
+      "enabled": true,
+      "invert": false,
+      "minRadius": 0.35,
+      "pixelsPerRadian": 107,
+      "scrollEase": 0.3,
+      "startThreshold": 0.35
+    },
+    "clickRiseThreshold": 0.1,
+    "cursorDeadzone": 0.006,
+    "cursorSpeed": 0.6,
+    "defaultMode": "global",
+    "demoRemoteEnabled": true,
+    "dictation": {
+      "activeMode": "final",
+      "autoInsert": true,
+      "cleanupProvider": "deepseek",
+      "copyOnFailure": true,
+      "deepSeekCleanupModel": "deepseek-v4-flash",
+      "dictionary": [
+        {
+          "aliases": [
+            "hyper vibe",
+            "Hyper Vibe"
+          ],
+          "term": "HyperVibe"
+        },
+        {
+          "aliases": [],
+          "term": "layer"
+        },
+        {
+          "aliases": [],
+          "term": "core"
+        }
+      ],
+      "enabled": false,
+      "feedbackSoundVolume": 0.55,
+      "feedbackSoundsEnabled": true,
+      "finalModel": "gpt-transcribe",
+      "keyboardShortcut": "",
+      "languageHints": [
+        "zh",
+        "en"
+      ],
+      "layerModes": {},
+      "maxRecordingSeconds": 600,
+      "minimumRecordingSeconds": 1,
+      "openAICleanupModel": "gpt-5.6-luna",
+      "outputMode": "final",
+      "pasteLastOnSideButtonDouble": true,
+      "pipelineOverlayEnabled": true,
+      "restoreClipboardAfterInsert": true,
+      "selectionEditProvider": "deepseek",
+      "selectionEditingEnabled": true,
+      "streamingModel": "gpt-live-transcribe"
+    },
+    "doubleTapWindow": 0.3,
+    "dragIndicatorEnabled": true,
+    "findCursorEnabled": true,
+    "focusFollowsCursor": false,
+    "holdCancelGrace": 1,
+    "holdHUDEnabled": true,
+    "holdThreshold": 0.5,
+    "holdThreshold2": 1,
+    "holdThreshold3": 1.6,
+    "icons": {
+      "fallback": "command.circle.fill",
+      "layer.default": "square.stack.3d.up.fill",
+      "remote.connected": "appletvremote.gen4.fill",
+      "remote.disconnected": "appletvremote.gen4",
+      "voice.copied": "doc.on.doc.fill",
+      "voice.error": "exclamationmark.triangle.fill",
+      "voice.inserted": "checkmark.circle.fill",
+      "voice.inserting": "text.cursor",
+      "voice.listening": "waveform.circle.fill",
+      "voice.mode.external": "keyboard.badge.ellipsis",
+      "voice.mode.final": "text.badge.checkmark",
+      "voice.mode.streaming": "bolt.horizontal.circle.fill",
+      "voice.polishing": "wand.and.stars",
+      "voice.selection.listening": "text.cursor",
+      "voice.selection.replaced": "checkmark.seal.fill",
+      "voice.selection.rewriting": "square.and.pencil",
+      "voice.transcribing": "waveform.badge.magnifyingglass"
+    },
+    "interfaceLanguage": "zh",
+    "launchAtLoginEnabled": false,
+    "layerHUDEnabled": true,
+    "layers": [
+      {
+        "color": "green",
+        "icon": "square.stack.3d.up.fill",
+        "id": "BASE",
+        "name": "Layer 1"
+      },
+      {
+        "color": "blue",
+        "icon": "square.stack.3d.up.fill",
+        "id": "L1",
+        "name": "Layer 2"
+      },
+      {
+        "color": "purple",
+        "icon": "square.stack.3d.up.fill",
+        "id": "L2",
+        "name": "Layer 3"
+      }
+    ],
+    "menuBarIconEnabled": true,
+    "pressMoveMax": 0.025,
+    "showSetupWizardOnFirstLaunch": true,
+    "spacesModeWindow": 5,
+    "statusWidgetEnabled": true,
+    "swipeVelocity": 0.5
+  }
+}
